@@ -9,13 +9,26 @@ import {
   BsDatepickerModule,
   TimepickerModule
 } from 'ngx-bootstrap';
+import { NgSelectModule } from '@ng-select/ng-select';
 import { AppComponent } from './app.component';
 import { BasicFormlyComponent } from './basic-formly/basic-formly.component';
+import { CustomTemplateFormlyComponent } from './custom-template-formly/custom-template-formly.component';
+import {
+  FormlyFieldTextInputComponent,
+  FormlyFieldTextSelectComponent,
+  FormlyFieldTextDateComponent,
+  FormlyFieldTexTimeComponent
+} from './custom-templates';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BasicFormlyComponent
+    BasicFormlyComponent,
+    CustomTemplateFormlyComponent,
+    FormlyFieldTextInputComponent,
+    FormlyFieldTextSelectComponent,
+    FormlyFieldTextDateComponent,
+    FormlyFieldTexTimeComponent
   ],
   imports: [
     BrowserModule,
@@ -24,13 +37,35 @@ import { BasicFormlyComponent } from './basic-formly/basic-formly.component';
 
     // Initizalie the formly module
     // pass some custom configuration
-    FormlyModule.forRoot(),
+    // This config can also be done per child with
+    // FormlyModule.forChild()
+    FormlyModule.forRoot({
+      types: [
+        {
+          name: 'custom-text',
+          component: FormlyFieldTextInputComponent
+        },
+        {
+          name: 'custom-select',
+          component: FormlyFieldTextSelectComponent
+        },
+        {
+          name: 'custom-date',
+          component: FormlyFieldTextDateComponent
+        },
+        {
+          name: 'custom-time',
+          component: FormlyFieldTexTimeComponent
+        }
+      ]
+    }),
     FormlyBootstrapModule,
 
     // Some ngx-bootstrap to implement using formly
     AccordionModule.forRoot(),
     BsDatepickerModule.forRoot(),
-    TimepickerModule.forRoot()
+    TimepickerModule.forRoot(),
+    NgSelectModule
   ],
   bootstrap: [AppComponent]
 })
