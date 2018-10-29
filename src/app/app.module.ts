@@ -40,6 +40,7 @@ import {
     // This config can also be done per child with
     // FormlyModule.forChild()
     FormlyModule.forRoot({
+      //  These work on the 'type' keyword
       types: [
         {
           name: 'custom-text',
