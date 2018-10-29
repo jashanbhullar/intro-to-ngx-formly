@@ -1,10 +1,12 @@
 # IntroToNgxFormly
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+This demo code is demonstrate to things that I felt were missing on [ngx-formly demo page](https://formly-js.github.io/ngx-formly/)
+Will be focusing on creating `custom type templates` for forms.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` or `yarn serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
