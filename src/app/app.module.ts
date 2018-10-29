@@ -10,10 +10,12 @@ import {
   TimepickerModule
 } from 'ngx-bootstrap';
 import { AppComponent } from './app.component';
+import { BasicFormlyComponent } from './basic-formly/basic-formly.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BasicFormlyComponent
   ],
   imports: [
     BrowserModule,
