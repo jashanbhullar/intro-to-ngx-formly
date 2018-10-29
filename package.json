@@ -1,15 +1,21 @@
 {
   "name": "intro-to-ngx-formly",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "serve": "ng serve"
   },
-  "private": true,
+  "author": {
+    "name": "Jashanpreet Singh",
+    "email": "jsbhullar96@gmail.com",
+    "url": "https://github.com/jashanbhullar"
+  },
+  "license": "MIT",
   "dependencies": {
     "@angular/animations": "^6.0.3",
     "@angular/common": "^6.0.3",
@@ -20,7 +26,11 @@
     "@angular/platform-browser": "^6.0.3",
     "@angular/platform-browser-dynamic": "^6.0.3",
     "@angular/router": "^6.0.3",
+    "@ngx-formly/bootstrap": "^4.8.0",
+    "@ngx-formly/core": "^4.8.0",
+    "bootstrap": "^4.1.3",
     "core-js": "^2.5.4",
+    "ngx-bootstrap": "^3.0.1",
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"
   },
