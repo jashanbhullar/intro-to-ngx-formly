@@ -13,12 +13,13 @@ import { NgSelectModule } from '@ng-select/ng-select';
 import { AppComponent } from './app.component';
 import { BasicFormlyComponent } from './basic-formly/basic-formly.component';
 import { CustomTemplateFormlyComponent } from './custom-template-formly/custom-template-formly.component';
+import { FormlyWrapperAccordianComponent } from './custom-wrapper';
 import {
   FormlyFieldTextInputComponent,
   FormlyFieldTextSelectComponent,
   FormlyFieldTextDateComponent,
   FormlyFieldTexTimeComponent
-} from './custom-templates';
+} from './custom-types';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {
     FormlyFieldTextInputComponent,
     FormlyFieldTextSelectComponent,
     FormlyFieldTextDateComponent,
-    FormlyFieldTexTimeComponent
+    FormlyFieldTexTimeComponent,
+    FormlyWrapperAccordianComponent
   ],
   imports: [
     BrowserModule,
@@ -57,6 +59,12 @@ import {
         {
           name: 'custom-time',
           component: FormlyFieldTexTimeComponent
+        }
+      ],
+      wrappers: [
+        {
+          name: 'accordian',
+          component: FormlyWrapperAccordianComponent
         }
       ]
     }),
