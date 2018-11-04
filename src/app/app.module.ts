@@ -20,6 +20,7 @@ import {
   FormlyFieldTextDateComponent,
   FormlyFieldTexTimeComponent
 } from './custom-types';
+import { CustomWrapperFormlyComponent } from './custom-wrapper-formly/custom-wrapper-formly.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import {
     FormlyFieldTextSelectComponent,
     FormlyFieldTextDateComponent,
     FormlyFieldTexTimeComponent,
-    FormlyWrapperAccordianComponent
+    FormlyWrapperAccordianComponent,
+    CustomWrapperFormlyComponent
   ],
   imports: [
     BrowserModule,
