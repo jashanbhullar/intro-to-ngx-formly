@@ -1,4 +1,8 @@
-# IntroToNgxFormly
+# Blog 
+
+https://medium.com/@jsbhullar96/introduction-to-ngx-formly-8acae4303228
+ 
+## IntroToNgxFormly
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 This demo code is demonstrate to things that I felt were missing on [ngx-formly demo page](https://formly-js.github.io/ngx-formly/)
